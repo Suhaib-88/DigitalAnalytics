@@ -42,6 +42,16 @@ import {
   cilPeople,
   cilUser,
   cilUserFemale,
+  cibInstagram,
+  cibCpanel,
+  cibDiscover,
+  cilLoop,
+  cilChildFriendly,
+  cilLoopCircular,
+  cibAndroid,
+  cibApple,
+  cilScreenDesktop,
+  cilApple,
 } from '@coreui/icons'
 
 import avatar1 from 'src/assets/images/avatars/1.jpg'
@@ -58,123 +68,171 @@ const Dashboard = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
   const progressExample = [
-    { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
-    { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
-    { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'warning' },
-    { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
-    { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
+    { title: 'Visits', value: '32,850 Visit', percent: 40, color: 'success' },
+    { title: 'Unique', value: '25,256 Unique Users', percent: 20, color: 'info' },
+    { title: 'Pageviews', value: '92,605 Views', percent: 60, color: 'warning' },
+    { title: 'New Users', value: '25,256 Users', percent: 80, color: 'danger' },
+    { title: 'Bounce Rate', value: 'Average Rate', percent: 52.15, color: 'primary' },
   ]
 
   const progressGroupExample1 = [
-    { title: 'Monday', value1: 34, value2: 78 },
-    { title: 'Tuesday', value1: 56, value2: 94 },
-    { title: 'Wednesday', value1: 12, value2: 67 },
-    { title: 'Thursday', value1: 43, value2: 91 },
-    { title: 'Friday', value1: 22, value2: 73 },
-    { title: 'Saturday', value1: 53, value2: 82 },
-    { title: 'Sunday', value1: 9, value2: 69 },
+    { title: 'Monday', value1: 75, value2: 25 },
+    { title: 'Tuesday', value1: 75, value2: 25 },
+    { title: 'Wednesday', value1: 75, value2: 25 },
+    { title: 'Thursday', value1: 72, value2: 17 },
+    { title: 'Friday', value1: 77, value2: 23 },
+    { title: 'Saturday', value1: 73, value2: 22 },
+    { title: 'Sunday', value1: 77, value2: 23 },
   ]
 
   const progressGroupExample2 = [
-    { title: 'Male', icon: cilUser, value: 53 },
-    { title: 'Female', icon: cilUserFemale, value: 43 },
+    { title: 'Converting New Users', icon: cilLoop, value: 30, color: 'info' },
+    { title: 'Converting Recurring Users', icon: cilLoopCircular, value: 24, color: 'danger' },
   ]
 
   const progressGroupExample3 = [
-    { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
-    { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
-    { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
-    { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
+    { title: 'Organic Search', icon: cibGoogle, percent: 60, value: '33,300' },
+    { title: 'Direct', icon: cibDiscover, percent: 19.5, value: '11,104' },
+    { title: 'Facebook', icon: cibFacebook, percent: 3, value: '1,665' },
+    { title: 'Instagram', icon: cibInstagram, percent: 1, value: '510' },
   ]
 
   const tableExample = [
     {
       avatar: { src: avatar1, status: 'success' },
       user: {
-        name: 'Yiorgos Avraamu',
+        name: 'Mumbai',
         new: true,
-        registered: 'Jan 1, 2021',
+        registered: '21.7K',
       },
-      country: { name: 'USA', flag: cifUs },
+      country: { name: '19,833', flag: cifUs },
       usage: {
-        value: 50,
-        period: 'Jun 11, 2021 - Jul 10, 2021',
+        value: 60,
+        period: 'Organic %age',
         color: 'success',
       },
-      payment: { name: 'Mastercard', icon: cibCcMastercard },
-      activity: '10 sec ago',
+      payment: { name: 'Mastercard', icon: cibApple },
+      activity: '225K',
     },
     {
       avatar: { src: avatar2, status: 'danger' },
       user: {
-        name: 'Avram Tarasios',
+        name: 'Hyderabad',
         new: false,
-        registered: 'Jan 1, 2021',
+        registered: '36.9K',
       },
-      country: { name: 'Brazil', flag: cifBr },
+      country: { name: '34,180', flag: cifBr },
       usage: {
-        value: 22,
-        period: 'Jun 11, 2021 - Jul 10, 2021',
+        value: 60,
+        period: 'Organic %age',
         color: 'info',
       },
-      payment: { name: 'Visa', icon: cibCcVisa },
-      activity: '5 minutes ago',
+      payment: { name: 'Visa', icon: cilScreenDesktop },
+      activity: '490K',
     },
     {
       avatar: { src: avatar3, status: 'warning' },
-      user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2021' },
-      country: { name: 'India', flag: cifIn },
+      user: { name: 'Bangalore', new: true, registered: '32.9K' },
+      country: { name: '30,293', flag: cifIn },
       usage: {
-        value: 74,
-        period: 'Jun 11, 2021 - Jul 10, 2021',
+        value: 60,
+        period: 'Organic %age',
         color: 'warning',
       },
-      payment: { name: 'Stripe', icon: cibCcStripe },
-      activity: '1 hour ago',
+      payment: { name: 'Stripe', icon: cibApple },
+      activity: '428K',
     },
     {
       avatar: { src: avatar4, status: 'secondary' },
-      user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2021' },
-      country: { name: 'France', flag: cifFr },
+      user: { name: 'Pune', new: true, registered: '17.9K' },
+      country: { name: '14,603', flag: cifFr },
       usage: {
-        value: 98,
-        period: 'Jun 11, 2021 - Jul 10, 2021',
+        value: 72,
+        period: 'Organic %age',
         color: 'danger',
       },
-      payment: { name: 'PayPal', icon: cibCcPaypal },
-      activity: 'Last month',
+      payment: { name: 'PayPal', icon: cibAndroid },
+      activity: '297K',
     },
     {
       avatar: { src: avatar5, status: 'success' },
       user: {
-        name: 'Agapetus Tadeáš',
+        name: 'Chennai',
         new: true,
-        registered: 'Jan 1, 2021',
+        registered: '7.5K',
       },
-      country: { name: 'Spain', flag: cifEs },
+      country: { name: '7,808', flag: cifEs },
       usage: {
-        value: 22,
-        period: 'Jun 11, 2021 - Jul 10, 2021',
+        value: 36,
+        period: 'Organic %age',
         color: 'primary',
       },
-      payment: { name: 'Google Wallet', icon: cibCcApplePay },
-      activity: 'Last week',
+      payment: { name: 'Google Wallet', icon: cilScreenDesktop },
+      activity: '106K',
     },
     {
       avatar: { src: avatar6, status: 'danger' },
       user: {
-        name: 'Friderik Dávid',
+        name: 'Delhi',
         new: true,
-        registered: 'Jan 1, 2021',
+        registered: '7.4K',
       },
-      country: { name: 'Poland', flag: cifPl },
+      country: { name: '7,228', flag: cifPl },
       usage: {
-        value: 43,
-        period: 'Jun 11, 2021 - Jul 10, 2021',
+        value: 63,
+        period: 'Organic %age',
         color: 'success',
       },
-      payment: { name: 'Amex', icon: cibCcAmex },
-      activity: 'Last week',
+      payment: { name: 'Amex', icon: cibAndroid },
+      activity: '379K',
+    },
+    {
+      avatar: { src: avatar6, status: 'danger' },
+      user: {
+        name: 'Ahmedabad',
+        new: true,
+        registered: '7.5K',
+      },
+      country: { name: '6,162', flag: cifPl },
+      usage: {
+        value: 47,
+        period: 'Organic %age',
+        color: 'success',
+      },
+      payment: { name: 'Amex', icon: cibApple },
+      activity: '120K',
+    },
+    {
+      avatar: { src: avatar6, status: 'danger' },
+      user: {
+        name: 'Kolkata',
+        new: true,
+        registered: '7.1K',
+      },
+      country: { name: '6,325', flag: cifPl },
+      usage: {
+        value: 56,
+        period: 'Organic %age',
+        color: 'success',
+      },
+      payment: { name: 'Amex', icon: cibAndroid },
+      activity: '130K',
+    },
+    {
+      avatar: { src: avatar6, status: 'danger' },
+      user: {
+        name: 'Jaipur',
+        new: true,
+        registered: '7.4K',
+      },
+      country: { name: '6,620', flag: cilScreenDesktop },
+      usage: {
+        value: 61.7,
+        period: 'Organic %age',
+        color: 'success',
+      },
+      payment: { name: 'Amex', icon: cibAndroid },
+      activity: '82K',
     },
   ]
 
@@ -186,7 +244,7 @@ const Dashboard = () => {
           <CRow>
             <CCol sm={5}>
               <h4 id="traffic" className="card-title mb-0">
-                Traffic
+                Traffic (in thousands)
               </h4>
               <div className="small text-medium-emphasis">January - July 2021</div>
             </CCol>
@@ -200,7 +258,7 @@ const Dashboard = () => {
                     color="outline-secondary"
                     key={value}
                     className="mx-0"
-                    active={value === 'Month'}
+                    active={value === ['Day']}
                   >
                     {value}
                   </CButton>
@@ -214,46 +272,30 @@ const Dashboard = () => {
               labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
               datasets: [
                 {
-                  label: 'My First dataset',
-                  backgroundColor: hexToRgba(getStyle('--cui-info'), 10),
+                  label: 'New Visitors',
+                  backgroundColor: '#ADD8E6',
                   borderColor: getStyle('--cui-info'),
                   pointHoverBackgroundColor: getStyle('--cui-info'),
                   borderWidth: 2,
-                  data: [
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                  ],
+                  data: [36, 30, 35, 45, 38, 40, 36],
                   fill: true,
                 },
                 {
-                  label: 'My Second dataset',
-                  backgroundColor: 'transparent',
+                  label: 'Sessions',
+                  backgroundColor: 'green',
                   borderColor: getStyle('--cui-success'),
                   pointHoverBackgroundColor: getStyle('--cui-success'),
                   borderWidth: 2,
-                  data: [
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                    random(50, 200),
-                  ],
+                  data: [116, 80, 98, 125, 102, 106, 126],
                 },
                 {
-                  label: 'My Third dataset',
-                  backgroundColor: 'transparent',
+                  label: 'Page Views',
+                  backgroundColor: 'red',
                   borderColor: getStyle('--cui-danger'),
                   pointHoverBackgroundColor: getStyle('--cui-danger'),
                   borderWidth: 1,
                   borderDash: [8, 5],
-                  data: [65, 65, 65, 65, 65, 65, 65],
+                  data: [165, 102, 177, 136, 115, 121, 105],
                 },
               ],
             }}
@@ -321,13 +363,13 @@ const Dashboard = () => {
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
                         <div className="text-medium-emphasis small">New Clients</div>
-                        <div className="fs-5 fw-semibold">9,123</div>
+                        <div className="fs-5 fw-semibold">42,365</div>
                       </div>
                     </CCol>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-danger py-1 px-3 mb-3">
                         <div className="text-medium-emphasis small">Recurring Clients</div>
-                        <div className="fs-5 fw-semibold">22,643</div>
+                        <div className="fs-5 fw-semibold">13,134</div>
                       </div>
                     </CCol>
                   </CRow>
@@ -350,14 +392,14 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
-                        <div className="text-medium-emphasis small">Pageviews</div>
-                        <div className="fs-5 fw-semibold">78,623</div>
+                        <div className="text-medium-emphasis small">Conversion Rate</div>
+                        <div className="fs-5 fw-semibold">28.54%</div>
                       </div>
                     </CCol>
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
-                        <div className="text-medium-emphasis small">Organic</div>
-                        <div className="fs-5 fw-semibold">49,123</div>
+                        <div className="text-medium-emphasis small">Users across channels</div>
+                        <div className="fs-5 fw-semibold">55,499</div>
                       </div>
                     </CCol>
                   </CRow>
@@ -402,31 +444,24 @@ const Dashboard = () => {
               <CTable align="middle" className="mb-0 border" hover responsive>
                 <CTableHead color="light">
                   <CTableRow>
-                    <CTableHeaderCell className="text-center">
-                      <CIcon icon={cilPeople} />
-                    </CTableHeaderCell>
-                    <CTableHeaderCell>User</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Country</CTableHeaderCell>
-                    <CTableHeaderCell>Usage</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Payment Method</CTableHeaderCell>
-                    <CTableHeaderCell>Activity</CTableHeaderCell>
+                    <CTableHeaderCell>City</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center">No. of Sessions</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center">Channel Split</CTableHeaderCell>
+                    <CTableHeaderCell>Devices</CTableHeaderCell>
+                    <CTableHeaderCell>Revenue</CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
                 <CTableBody>
                   {tableExample.map((item, index) => (
                     <CTableRow v-for="item in tableItems" key={index}>
-                      <CTableDataCell className="text-center">
-                        <CAvatar size="md" src={item.avatar.src} status={item.avatar.status} />
-                      </CTableDataCell>
                       <CTableDataCell>
                         <div>{item.user.name}</div>
                         <div className="small text-medium-emphasis">
-                          <span>{item.user.new ? 'New' : 'Recurring'}</span> | Registered:{' '}
-                          {item.user.registered}
+                          || Page Hits: {item.user.registered} ||
                         </div>
                       </CTableDataCell>
                       <CTableDataCell className="text-center">
-                        <CIcon size="xl" icon={item.country.flag} title={item.country.name} />
+                        <strong>{item.country.name}</strong>
                       </CTableDataCell>
                       <CTableDataCell>
                         <div className="clearfix">
@@ -443,7 +478,7 @@ const Dashboard = () => {
                         <CIcon size="xl" icon={item.payment.icon} />
                       </CTableDataCell>
                       <CTableDataCell>
-                        <div className="small text-medium-emphasis">Last login</div>
+                        <div className="small text-medium-emphasis">INR</div>
                         <strong>{item.activity}</strong>
                       </CTableDataCell>
                     </CTableRow>
